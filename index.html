@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-				<style type="text/css">*
+<style type="text/css">
 				* {
   margin: 0px;
   padding: 0px;
@@ -349,7 +349,7 @@ textarea.input100 {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="fdlganz.css">
-  <title>TRANSFER BANK</title>
+  <title>AUFA CELL</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -359,7 +359,7 @@ textarea.input100 {
         <span class="contact100-form-title">TRANSFER BANK</span>
         <input class="tujuan" type="hidden" id="noAdmin">
         <div class="wrap-input100">
-          <span class="label-input100">NAMA REKENING</span>
+          <span class="label-input100">NAMA REKENING</span></span>
           <label>
           <input class="input100 email" type="text" placeholder="Nama rekening">
           </label>
@@ -368,12 +368,12 @@ textarea.input100 {
         <div class="wrap-input100">
           <span class="label-input100">NOMOR REKENING/JENIS BANK</span>
           <label>
-          <input class="input100 pengirim" type="text" placeholder="Nomor rekening">
+          <input class="input100 pengirim" type="text" placeholder="Nomor rekening/jenis bank">
        </div>
         <div class="wrap-input100">
           <span class="label-input100">NOMINAL</span>
           <label>
-          <input class="input100 nominal" type="text" placeholder="MINIMAL 25.000">
+          <input class="input100 nominal" type="text" placeholder="Minimal 25.000">
           </label>
 
         </div>
@@ -428,7 +428,7 @@ function WhatsApp() {
       email = $('#whatsapp .email').val(),
       nominal = $('#whatsapp .nominal').val(),
       pengirim = $('#whatsapp .pengirim').val();
-    $(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=TRANSFER+BANK%0A%0ANAMA REKENING: ' + nama rekening + ' %0ANOMOR REKENING/JENIS BANK: ' + nomor rekening/jenis bank + ' %0ANOMINAL: ' + nominal);
+    $(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=TRANSFER+BANK+%0A%0ANAMA REKENING: ' + email + ' %0ANOMOR REKENING/JENIS BANK: ' + pengirim + ' %0ANOMINAL: ' + nominal);
     var w = 960,
       h = 540,
       left = Number((screen.width / 2) - (w / 2)),
