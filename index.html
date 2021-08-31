@@ -351,8 +351,6 @@ textarea.input100 {
   <link rel="stylesheet" href="fdlganz.css">
   <title>TRANSFER BANK</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  < script  async  src =" https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8247290737950345 "
-     crossorigin =" anonim " > </ script >
 </head>
 <body>
   <div class="container-contact100">
@@ -368,7 +366,7 @@ textarea.input100 {
           <span class="focus-input100"></span>
         </div>
         <div class="wrap-input100">
-          <span class="label-input100">NOMOR REKENING</span>
+          <span class="label-input100">NOMOR REKENING/JENIS BANK</span>
           <label>
           <input class="input100 pengirim" type="text" placeholder="Nomor rekening">
        </div>
@@ -430,7 +428,7 @@ function WhatsApp() {
       email = $('#whatsapp .email').val(),
       nominal = $('#whatsapp .nominal').val(),
       pengirim = $('#whatsapp .pengirim').val();
-    $(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=TRANSFER+BANK%0A%0AEMAIL: ' + email + ' %0ANAMA PENGIRIM: ' + pengirim + ' %0ANOMINAL: ' + nominal);
+    $(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=TRANSFER+BANK%0A%0ANAMA REKENING: ' + nama rekening + ' %0ANOMOR REKENING/JENIS BANK: ' + nomor rekening/jenis bank + ' %0ANOMINAL: ' + nominal);
     var w = 960,
       h = 540,
       left = Number((screen.width / 2) - (w / 2)),
